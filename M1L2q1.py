@@ -51,6 +51,7 @@ def is_valid_sudoku(board):
             return "NO"
     return "YES"
 
+
 n = int(input())
 sudoku_board = []
 for _ in range(n):

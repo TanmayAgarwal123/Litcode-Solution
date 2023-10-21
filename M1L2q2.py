@@ -38,7 +38,7 @@ class CustomQueue:
         if self.stack2:
             print(self.stack2[-1])
 
-# Example usage
+
 queries = input().split(',')
 queue = CustomQueue()
 

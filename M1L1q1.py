@@ -1,3 +1,7 @@
+"""
+
+"""
+
 def do_something(email):
     a = len(email)
     upper = 0
