@@ -26,22 +26,17 @@ Output:
 """
 import sys
 def min_set_size(num, k):
-    # If k is greater than num, no solution exists
     if k > num:
         return -1
 
-    # If k is 0, then either 1 or no solution
     if k == 0:
         return 1 if num == 0 else -1
 
-    # Check if forming a set is impossible based on the new observation
     if num % 10 < k and num // 10 < k - num % 10:
         return -1
 
-    # Calculate the minimum set size
     set_size = 0
     while num > 0:
-        # Subtract the largest possible number with unit digit k
         subtract_value = (num - k) // 10 * 10 + k
         num -= subtract_value
         set_size += 1
